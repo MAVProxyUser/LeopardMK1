@@ -21,13 +21,6 @@ git submodule update
 sudo chmod -R 777 Cheetah-Software
 cd Cheetah-Software
 
-#epydoc
-wget -q http://prdownloads.sourceforge.net/epydoc/epydoc-3.0.1.tar.gz
-sudo gunzip epydoc-3.0.1.tar.gz
-sudo tar -xvf epydoc-3.0.1.tar
-sleep 5
-
-
 #Eigen library
 wget https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.zip
 unzip eigen-3.3.7.zip
