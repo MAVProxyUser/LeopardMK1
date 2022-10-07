@@ -13,6 +13,10 @@ INSTALLATION GUIDE
 
 PROCESS
 --------
+## IF Cheetah-Software folder is missing
+git submodule update --init --recursive
+
+
 ## Open terminal in folder
 ## Type :
 
