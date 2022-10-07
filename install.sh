@@ -17,6 +17,7 @@ export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_281/
 
 #Clone  MIT Minicheetah software (alternate download, now a submodule)
 #sudo git clone https://github.com/MAVProxyUser/Cheetah-Software.git
+git submodule update
 sudo chmod -R 777 Cheetah-Software
 cd Cheetah-Software
 
