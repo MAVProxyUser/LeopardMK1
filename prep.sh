@@ -28,6 +28,7 @@ sudo apt install mesa-common-dev -y
 sudo apt install git -y
 sudo apt install cmake -y
 sudo apt install qtbase5-dev -y
+sudo apt install libqt5gamepad5 libqt5gamepad5-dev -y
 
 ######QTCREATOR
 
