@@ -9,6 +9,10 @@ sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_28
 sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_281/bin/javac
 sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.8.0_281/bin/jar 3
 sudo update-alternatives --set jar /usr/lib/jvm/jdk1.8.0_281/bin/jar
+sudo update-alternatives --install /usr/bin/javadoc javadoc /usr/lib/jvm/jdk1.8.0_281/bin/javadoc 3
+sudo update-alternatives --set javadoc /usr/lib/jvm/jdk1.8.0_281/bin/javadoc
+sudo update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.8.0_281/bin/javah 3
+sudo update-alternatives --set javah /usr/lib/jvm/jdk1.8.0_281/bin/javah
 
 #Install dependancies
 
