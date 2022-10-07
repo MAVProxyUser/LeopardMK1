@@ -1,0 +1,3 @@
+[submodule "Cheetah-Software"]
+	path = Cheetah-Software
+	url = https://github.com/MAVProxyUser/Cheetah-Software.git

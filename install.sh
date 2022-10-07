@@ -12,89 +12,11 @@
 ##
 
 cat header1
-sudo apt update
 
-sleep 5
-sudo apt install default-jre -y
-sleep 5 
-
-sudo apt install default-jdk -y
-
-sudo tar -zxvf jdk-8u281-linux-x64.tar.gz -C /usr/lib/jvm/
-sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_281/bin/java 3
-sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_281/bin/java
-sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_281/bin/javac 3
-sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_281/bin/javac
-sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.8.0_281/bin/jar 3
-sudo update-alternatives --set jar /usr/lib/jvm/jdk1.8.0_281/bin/jar
 export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_281/
-sleep 5
-#Install dependancies
 
-sudo apt install freeglut3-dev -y
-
-
-
-sudo apt install golang -y
-sleep 5
-sudo apt install doxygen -y
-sleep 5
-sudo apt install libglib2.0-dev -y
-sleep 5
-sudo apt install python-all-dev -y
-sleep 5
-sudo apt install liblua5.1-0-dev -y
-sleep 5
-sudo apt install build-essential -y
-sleep 5
-sudo apt install gcc -y
-sleep 5
-sudo apt install coinor-libipopt-dev -y
-sleep 5
-
-sudo apt install gfortran -y
-sleep 5
-sudo apt install liblapack-dev -y
-sleep 5
-sudo apt install libblas-dev -y
-sleep 5
-sudo apt install mesa-common-dev -y
-sleep 5
-sudo apt install git -y
-sleep 5
-sudo apt install cmake -y
-
-sleep 5
-sudo apt install qtbase5-dev -y
-sleep 5
-
-######QTCREATOR
-
-wget http://mirrors.ukfast.co.uk/sites/qt.io/archive/qt/5.12/5.12.8/qt-opensource-linux-x64-5.12.8.run
-
-
-chmod +x qt-opensource-linux-x64-5.12.8.run
-./qt-opensource-linux-x64-5.12.8.run
-
-
-
-
-###### for increase speed of compile with swap file thanks elpimous     ////maybe dont need to test
-sudo sysctl vm.swappiness=5
-sudo swapoff -av
-sudo swapon -av
-
-sudo fallocate -l 4g /file.swap
-sudo chmod 600 /file.swap
-sudo mkswap /file.swap
-sudo swapon /file.swap
-sudo swapoff /swapfile
-sudo rm /swapfile
-
-sleep 5
-
-#Clone  MIT Minicheetah software
-sudo git clone https://github.com/mit-biomimetics/Cheetah-Software.git
+#Clone  MIT Minicheetah software (alternate download, now a submodule)
+#sudo git clone https://github.com/MAVProxyUser/Cheetah-Software.git
 sudo chmod -R 777 Cheetah-Software
 cd Cheetah-Software
 
